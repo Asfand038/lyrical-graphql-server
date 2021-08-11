@@ -7,8 +7,8 @@ const cors = require("cors");
 
 const app = express();
 
-// Replace with your mongoLab URI
-const MONGO_URI = `mongodb+srv://${process.env.mongodb_username}:${process.env.mongodb_password}@cluster0.xxgqi.mongodb.net/lyricaldb?retryWrites=true&w=majority`;
+// Replace with your mongoLab(Now changed to MongDB Atlas) URI
+const MONGO_URI = "";
 if (!MONGO_URI) {
   throw new Error("You must provide a MongoLab URI");
 }
